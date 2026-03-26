@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-
-<html class="light" lang="en"><head>
+<html class="light" lang="es"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Citizen Dashboard | Sovereign Justice</title>
+<title>Panel del Ciudadano | Justicia Soberana</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -80,20 +79,19 @@
     </style>
 </head>
 <body class="bg-surface font-body text-on-surface min-h-screen flex flex-col">
-<!-- TopNavBar -->
 <nav class="bg-slate-50 dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 flex justify-between items-center w-full px-6 py-3 max-w-full docked top-0 z-50">
 <div class="flex items-center gap-8">
-<span class="text-xl font-bold tracking-tighter text-blue-950 dark:text-white font-headline">Sovereign Justice</span>
+<span class="text-xl font-bold tracking-tighter text-blue-950 dark:text-white font-headline">Justicia Soberana</span>
 <div class="hidden md:flex gap-6 items-center">
-<a class="font-manrope text-sm font-semibold tracking-tight text-blue-700 dark:text-blue-300 border-b-2 border-blue-900 dark:border-blue-400 pb-1" href="#">Citizen</a>
-<a class="font-manrope text-sm font-semibold tracking-tight text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-blue-200 transition-colors" href="#">Admin</a>
-<a class="font-manrope text-sm font-semibold tracking-tight text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-blue-200 transition-colors" href="#">Judge</a>
+<a class="font-manrope text-sm font-semibold tracking-tight text-blue-700 dark:text-blue-300 border-b-2 border-blue-900 dark:border-blue-400 pb-1" href="#">Ciudadano</a>
+<a class="font-manrope text-sm font-semibold tracking-tight text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-blue-200 transition-colors" href="#">Administrador</a>
+<a class="font-manrope text-sm font-semibold tracking-tight text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-blue-200 transition-colors" href="#">Juez</a>
 </div>
 </div>
 <div class="flex items-center gap-4">
 <div class="relative hidden sm:block">
 <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-sm" data-icon="search">search</span>
-<input class="bg-surface-container-highest border-none rounded-lg pl-10 pr-4 py-2 text-sm focus:ring-2 focus:ring-primary-container w-64" placeholder="Search cases or IDs..." type="text"/>
+<input class="bg-surface-container-highest border-none rounded-lg pl-10 pr-4 py-2 text-sm focus:ring-2 focus:ring-primary-container w-64" placeholder="Buscar casos o identificaciones..." type="text"/>
 </div>
 <button class="p-2 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-colors relative">
 <span class="material-symbols-outlined text-slate-600 dark:text-slate-400" data-icon="notifications">notifications</span>
@@ -105,27 +103,24 @@
 </div>
 </nav>
 <main class="flex-grow flex flex-col md:flex-row max-w-[1600px] mx-auto w-full px-4 md:px-8 py-8 gap-8">
-<!-- Left Column: Citizen Identity & Actions -->
 <aside class="w-full md:w-80 flex flex-col gap-6">
-<!-- Profile Card -->
 <div class="bg-surface-container-lowest p-6 rounded-xl border-none">
 <div class="flex flex-col items-center text-center">
 <div class="w-20 h-20 rounded-full overflow-hidden bg-primary-fixed mb-4">
-<img alt="User Avatar" class="w-full h-full object-cover" data-alt="Professional headshot of a middle-aged man with short dark hair and a kind expression in soft daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCkKdw-6RgGJodHkRVv5oWuCZQvo8XvlB4zt7zoP7AE2w6FfDGtDLLjK0SPUoEM5_oR7r5eMWgX_CSw_-rlhzChU4VlQIpNe8k2G6lZbLHSgN6oNQq6zYDloWUmBJK9NTfNbJwIEVOYHg7WiZwcTFUpJyvvt26--sptTSneq0OTdxY0xfROtG80shJ5r5M1UvBocFFPm0VZhN82CaWe2_ldoCrQAYN4Z1_XBIyUPcU0iKLHXyfbRd7GH88e5_aeOhNLsXLk34JUMk"/>
+<img alt="Avatar del Usuario" class="w-full h-full object-cover" data-alt="Retrato profesional de un hombre de mediana edad con cabello oscuro corto y expresión amable en suave luz del día" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCkKdw-6RgGJodHkRVv5oWuCZQvo8XvlB4zt7zoP7AE2w6FfDGtDLLjK0SPUoEM5_oR7r5eMWgX_CSw_-rlhzChU4VlQIpNe8k2G6lZbLHSgN6oNQq6zYDloWUmBJK9NTfNbJwIEVOYHg7WiZwcTFUpJyvvt26--sptTSneq0OTdxY0xfROtG80shJ5r5M1UvBocFFPm0VZhN82CaWe2_ldoCrQAYN4Z1_XBIyUPcU0iKLHXyfbRd7GH88e5_aeOhNLsXLk34JUMk"/>
 </div>
 <h2 class="font-headline text-lg font-bold text-primary">Marcus Vane</h2>
-<p class="text-on-surface-variant text-sm mb-4">Verified Citizen ID: <span class="font-mono text-primary font-semibold">SVN-9921-X</span></p>
+<p class="text-on-surface-variant text-sm mb-4">ID de Ciudadano Verificado: <span class="font-mono text-primary font-semibold">SVN-9921-X</span></p>
 <button class="w-full bg-primary hover:bg-primary-container text-white py-3 rounded-md font-semibold transition-all flex items-center justify-center gap-2">
 <span class="material-symbols-outlined" data-icon="add">add</span>
-                        New Case Filing
+                        Registrar Nuevo Caso
                     </button>
 </div>
 </div>
-<!-- Notifications / Recent Activity -->
 <div class="bg-surface-container p-6 rounded-xl">
 <div class="flex justify-between items-center mb-4">
-<h3 class="font-headline font-bold text-secondary uppercase text-xs tracking-widest">Live Updates</h3>
-<span class="text-[10px] bg-primary-fixed text-on-primary-fixed px-2 py-0.5 rounded-full font-bold">3 NEW</span>
+<h3 class="font-headline font-bold text-secondary uppercase text-xs tracking-widest">Actualizaciones en Vivo</h3>
+<span class="text-[10px] bg-primary-fixed text-on-primary-fixed px-2 py-0.5 rounded-full font-bold">3 NUEVAS</span>
 </div>
 <div class="space-y-4">
 <div class="flex gap-3 items-start">
@@ -133,9 +128,9 @@
 <span class="material-symbols-outlined text-sm" data-icon="update">update</span>
 </div>
 <div>
-<p class="text-sm font-semibold">Hearing Scheduled</p>
-<p class="text-xs text-on-surface-variant">Case #2024-DR-082 updated by Clerk.</p>
-<p class="text-[10px] text-outline mt-1">14 mins ago</p>
+<p class="text-sm font-semibold">Audiencia Programada</p>
+<p class="text-xs text-on-surface-variant">Caso #2024-DR-082 actualizado por el Secretario.</p>
+<p class="text-[10px] text-outline mt-1">Hace 14 min</p>
 </div>
 </div>
 <div class="flex gap-3 items-start">
@@ -143,145 +138,137 @@
 <span class="material-symbols-outlined text-sm" data-icon="gavel">gavel</span>
 </div>
 <div>
-<p class="text-sm font-semibold">Signature Required</p>
-<p class="text-xs text-on-surface-variant">Demand Generator draft needs approval.</p>
-<p class="text-[10px] text-outline mt-1">2 hours ago</p>
+<p class="text-sm font-semibold">Firma Requerida</p>
+<p class="text-xs text-on-surface-variant">El borrador del Generador de Demandas necesita aprobación.</p>
+<p class="text-[10px] text-outline mt-1">Hace 2 horas</p>
 </div>
 </div>
 </div>
 </div>
 </aside>
-<!-- Right Column: Dashboard Content -->
 <div class="flex-grow flex flex-col gap-8">
-<!-- Hero Greeting & Summary -->
 <section>
-<h1 class="font-headline text-3xl font-extrabold text-primary tracking-tight mb-2">Justice Ledger Overview</h1>
-<p class="text-on-surface-variant max-w-2xl">You have 4 active cases within the Sovereign Judicial System. Your average resolution time is 22% faster than last quarter.</p>
+<h1 class="font-headline text-3xl font-extrabold text-primary tracking-tight mb-2">Resumen del Libro Mayor de Justicia</h1>
+<p class="text-on-surface-variant max-w-2xl">Tiene 4 casos activos dentro del Sistema Judicial Soberano. Su tiempo de resolución promedio es un 22% más rápido que el trimestre pasado.</p>
 </section>
-<!-- Bento Grid Layout -->
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
-<!-- Primary Case Ledger (Table) -->
 <div class="lg:col-span-8 bg-surface-container-lowest p-6 rounded-xl overflow-hidden">
 <div class="flex justify-between items-center mb-6">
-<h3 class="font-headline font-bold text-primary">Active Case Ledger</h3>
-<button class="text-primary text-sm font-semibold flex items-center gap-1">View Archives <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span></button>
+<h3 class="font-headline font-bold text-primary">Libro Mayor de Casos Activos</h3>
+<button class="text-primary text-sm font-semibold flex items-center gap-1">Ver Archivos <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span></button>
 </div>
 <div class="overflow-x-auto">
 <table class="w-full text-left border-collapse">
 <thead>
 <tr class="bg-surface-container-low">
-<th class="p-4 font-label text-[10px] uppercase tracking-wider text-on-surface-variant">Digital ID</th>
-<th class="p-4 font-label text-[10px] uppercase tracking-wider text-on-surface-variant">Matter Title</th>
-<th class="p-4 font-label text-[10px] uppercase tracking-wider text-on-surface-variant">Filing Date</th>
-<th class="p-4 font-label text-[10px] uppercase tracking-wider text-on-surface-variant">Status</th>
+<th class="p-4 font-label text-[10px] uppercase tracking-wider text-on-surface-variant">ID Digital</th>
+<th class="p-4 font-label text-[10px] uppercase tracking-wider text-on-surface-variant">Título del Asunto</th>
+<th class="p-4 font-label text-[10px] uppercase tracking-wider text-on-surface-variant">Fecha de Registro</th>
+<th class="p-4 font-label text-[10px] uppercase tracking-wider text-on-surface-variant">Estado</th>
 </tr>
 </thead>
 <tbody>
 <tr class="hover:bg-surface-container transition-colors cursor-pointer border-b border-surface-container-low last:border-0">
 <td class="p-4 font-mono text-sm text-primary">DR-2024-0012</td>
 <td class="p-4 font-semibold text-sm">Vane vs. CloudCorp Logistics</td>
-<td class="p-4 text-sm text-on-surface-variant">Oct 12, 2024</td>
+<td class="p-4 text-sm text-on-surface-variant">12 Oct, 2024</td>
 <td class="p-4">
-<span class="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-bold bg-primary-fixed text-on-primary-fixed uppercase tracking-tight">Open</span>
+<span class="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-bold bg-primary-fixed text-on-primary-fixed uppercase tracking-tight">Abierto</span>
 </td>
 </tr>
 <tr class="bg-surface-container-low/30 hover:bg-surface-container transition-colors cursor-pointer border-b border-surface-container-low last:border-0">
 <td class="p-4 font-mono text-sm text-primary">JD-2023-8902</td>
-<td class="p-4 font-semibold text-sm">Property Boundary Review</td>
-<td class="p-4 text-sm text-on-surface-variant">Sep 05, 2024</td>
+<td class="p-4 font-semibold text-sm">Revisión de Límites de Propiedad</td>
+<td class="p-4 text-sm text-on-surface-variant">05 Sep, 2024</td>
 <td class="p-4">
-<span class="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-bold bg-secondary-container text-on-secondary-container uppercase tracking-tight">In Review</span>
+<span class="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-bold bg-secondary-container text-on-secondary-container uppercase tracking-tight">En Revisión</span>
 </td>
 </tr>
 <tr class="hover:bg-surface-container transition-colors cursor-pointer border-b border-surface-container-low last:border-0">
 <td class="p-4 font-mono text-sm text-primary">TX-2024-0441</td>
-<td class="p-4 font-semibold text-sm">Municipal Tax Assessment</td>
-<td class="p-4 text-sm text-on-surface-variant">Nov 22, 2024</td>
+<td class="p-4 font-semibold text-sm">Evaluación de Impuestos Municipales</td>
+<td class="p-4 text-sm text-on-surface-variant">22 Nov, 2024</td>
 <td class="p-4">
-<span class="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-bold bg-error-container text-on-error-container uppercase tracking-tight">Resolution Pending</span>
+<span class="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-bold bg-error-container text-on-error-container uppercase tracking-tight">Resolución Pendiente</span>
 </td>
 </tr>
 <tr class="bg-surface-container-low/30 hover:bg-surface-container transition-colors cursor-pointer border-b border-surface-container-low last:border-0">
 <td class="p-4 font-mono text-sm text-primary">DR-2024-0015</td>
-<td class="p-4 font-semibold text-sm">Contractual Dispute: Freelance</td>
-<td class="p-4 text-sm text-on-surface-variant">Dec 01, 2024</td>
+<td class="p-4 font-semibold text-sm">Disputa Contractual: Autónomo</td>
+<td class="p-4 text-sm text-on-surface-variant">01 Dic, 2024</td>
 <td class="p-4">
-<span class="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-bold bg-primary-fixed text-on-primary-fixed uppercase tracking-tight">Open</span>
+<span class="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-bold bg-primary-fixed text-on-primary-fixed uppercase tracking-tight">Abierto</span>
 </td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
-<!-- AI Demand Generator Card -->
 <div class="lg:col-span-4 flex flex-col gap-6">
 <div class="bg-primary-container text-white p-6 rounded-xl flex flex-col h-full relative overflow-hidden group">
 <div class="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-110"></div>
 <div class="flex items-center gap-3 mb-4">
 <span class="material-symbols-outlined text-primary-fixed-dim" data-icon="auto_awesome">auto_awesome</span>
-<h3 class="font-headline font-bold text-lg">Demand Generator</h3>
+<h3 class="font-headline font-bold text-lg">Generador de Demandas</h3>
 </div>
-<p class="text-on-primary-container text-sm mb-6 flex-grow">Use our AI-assisted guide to draft your legal demand. State your case in plain English, and we will structure it for the court.</p>
-<!-- Conversational UI Preview -->
+<p class="text-on-primary-container text-sm mb-6 flex-grow">Use nuestra guía asistida por IA para redactar su demanda legal. Exponga su caso en lenguaje sencillo y nosotros lo estructuraremos para el tribunal.</p>
 <div class="bg-black/20 rounded-lg p-3 mb-6 backdrop-blur-sm">
 <div class="flex gap-2 mb-3">
 <div class="w-6 h-6 rounded-full bg-primary-fixed-dim flex-shrink-0"></div>
 <div class="bg-white/10 rounded-lg rounded-tl-none p-2 text-[11px] leading-relaxed">
-                                    "Tell me what happened regarding the logistics delay."
+                                    "Dígame qué sucedió con el retraso logístico."
                                 </div>
 </div>
 <div class="flex gap-2 justify-end">
 <div class="bg-primary rounded-lg rounded-tr-none p-2 text-[11px] leading-relaxed max-w-[80%]">
-                                    "They missed the delivery window three times and refused to refund the shipping cost..."
+                                    "Perdieron la ventana de entrega tres veces y se negaron a reembolsar el costo de envío..."
                                 </div>
 </div>
 </div>
-<button class="bg-white text-primary py-2.5 rounded-lg font-bold text-sm hover:bg-primary-fixed transition-colors">Start Guided Filing</button>
+<button class="bg-white text-primary py-2.5 rounded-lg font-bold text-sm hover:bg-primary-fixed transition-colors">Iniciar Registro Guiado</button>
 </div>
 </div>
-<!-- Counterpart Information Form -->
 <div class="lg:col-span-12 bg-surface-container-high p-8 rounded-xl">
 <div class="flex items-center gap-4 mb-8">
 <div class="w-12 h-12 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary">
 <span class="material-symbols-outlined" data-icon="person_search">person_search</span>
 </div>
 <div>
-<h3 class="font-headline font-bold text-xl text-primary">Counterpart Information</h3>
-<p class="text-on-surface-variant text-sm">Provide details for the party you are filing against.</p>
+<h3 class="font-headline font-bold text-xl text-primary">Información de la Contraparte</h3>
+<p class="text-on-surface-variant text-sm">Proporcione los detalles de la parte contra la que está presentando la demanda.</p>
 </div>
 </div>
 <form class="grid grid-cols-1 md:grid-cols-3 gap-8">
 <div class="flex flex-col gap-1">
-<label class="font-label text-xs font-bold text-secondary uppercase tracking-widest px-1">Full Legal Name</label>
-<input class="bg-surface-container-highest border-none border-b-2 border-transparent focus:border-primary focus:ring-0 transition-colors p-3 rounded-t-md" placeholder="Individual or Corporation Name" type="text"/>
+<label class="font-label text-xs font-bold text-secondary uppercase tracking-widest px-1">Nombre Legal Completo</label>
+<input class="bg-surface-container-highest border-none border-b-2 border-transparent focus:border-primary focus:ring-0 transition-colors p-3 rounded-t-md" placeholder="Nombre de la Persona o Corporación" type="text"/>
 </div>
 <div class="flex flex-col gap-1">
-<label class="font-label text-xs font-bold text-secondary uppercase tracking-widest px-1">Registered Address</label>
-<input class="bg-surface-container-highest border-none border-b-2 border-transparent focus:border-primary focus:ring-0 transition-colors p-3 rounded-t-md" placeholder="123 Justice Ave, Floor 4" type="text"/>
+<label class="font-label text-xs font-bold text-secondary uppercase tracking-widest px-1">Dirección Registrada</label>
+<input class="bg-surface-container-highest border-none border-b-2 border-transparent focus:border-primary focus:ring-0 transition-colors p-3 rounded-t-md" placeholder="Av. Justicia 123, Piso 4" type="text"/>
 </div>
 <div class="flex flex-col gap-1">
-<label class="font-label text-xs font-bold text-secondary uppercase tracking-widest px-1">Entity ID (Optional)</label>
-<input class="bg-surface-container-highest border-none border-b-2 border-transparent focus:border-primary focus:ring-0 transition-colors p-3 rounded-t-md" placeholder="Business Registration #" type="text"/>
+<label class="font-label text-xs font-bold text-secondary uppercase tracking-widest px-1">ID de la Entidad (Opcional)</label>
+<input class="bg-surface-container-highest border-none border-b-2 border-transparent focus:border-primary focus:ring-0 transition-colors p-3 rounded-t-md" placeholder="# de Registro Comercial" type="text"/>
 </div>
 </form>
 <div class="mt-8 flex justify-end">
-<button class="bg-tertiary-container text-tertiary-fixed px-8 py-3 rounded-lg font-bold hover:opacity-90 transition-opacity">Save Entity Details</button>
+<button class="bg-tertiary-container text-tertiary-fixed px-8 py-3 rounded-lg font-bold hover:opacity-90 transition-opacity">Guardar Detalles de la Entidad</button>
 </div>
 </div>
 </div>
 </div>
 </main>
-<!-- Footer -->
 <footer class="bg-slate-50 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 w-full py-8 mt-auto">
 <div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto w-full gap-4">
-<span class="font-manrope font-bold text-slate-400">SOVEREIGN JUSTICE</span>
+<span class="font-manrope font-bold text-slate-400">JUSTICIA SOBERANA</span>
 <div class="flex gap-6">
-<a class="font-inter text-xs uppercase tracking-widest text-slate-500 hover:text-blue-800 transition-colors" href="#">Privacy Policy</a>
-<a class="font-inter text-xs uppercase tracking-widest text-slate-500 hover:text-blue-800 transition-colors" href="#">Terms of Service</a>
-<a class="font-inter text-xs uppercase tracking-widest text-slate-500 hover:text-blue-800 transition-colors" href="#">Accessibility</a>
-<a class="font-inter text-xs uppercase tracking-widest text-slate-500 hover:text-blue-800 transition-colors" href="#">Contact</a>
+<a class="font-inter text-xs uppercase tracking-widest text-slate-500 hover:text-blue-800 transition-colors" href="#">Política de Privacidad</a>
+<a class="font-inter text-xs uppercase tracking-widest text-slate-500 hover:text-blue-800 transition-colors" href="#">Términos de Servicio</a>
+<a class="font-inter text-xs uppercase tracking-widest text-slate-500 hover:text-blue-800 transition-colors" href="#">Accesibilidad</a>
+<a class="font-inter text-xs uppercase tracking-widest text-slate-500 hover:text-blue-800 transition-colors" href="#">Contacto</a>
 </div>
-<p class="font-inter text-xs uppercase tracking-widest text-slate-600 dark:text-slate-400 text-center md:text-right">© 2024 Sovereign Judicial Support System. All rights reserved.</p>
+<p class="font-inter text-xs uppercase tracking-widest text-slate-600 dark:text-slate-400 text-center md:text-right">© 2024 Sistema de Apoyo de Justicia Soberana. Todos los derechos reservados.</p>
 </div>
 </footer>
 </body></html>

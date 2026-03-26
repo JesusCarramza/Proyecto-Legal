@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-
-<html class="light" lang="en"><head>
+<html class="light" lang="es"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Resolution Drafting | Sovereign Justice</title>
+<title>Redacción de Resoluciones | Justicia Soberana</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -84,14 +83,13 @@
     </style>
 </head>
 <body class="bg-surface text-on-surface flex flex-col min-h-screen">
-<!-- TopNavBar -->
 <header class="bg-slate-50 dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 flex justify-between items-center w-full px-6 py-3 max-w-full docked full-width top-0 z-50">
 <div class="flex items-center gap-8">
-<span class="text-xl font-bold tracking-tighter text-blue-950 dark:text-white">Sovereign Justice</span>
+<span class="text-xl font-bold tracking-tighter text-blue-950 dark:text-white">Justicia Soberana</span>
 <nav class="hidden md:flex gap-6 font-manrope text-sm font-semibold tracking-tight">
-<a class="text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-blue-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">Citizen</a>
-<a class="text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-blue-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">Admin</a>
-<a class="text-blue-700 dark:text-blue-300 border-b-2 border-blue-900 dark:border-blue-400 pb-1" href="#">Judge</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-blue-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">Ciudadano</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-blue-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">Administrador</a>
+<a class="text-blue-700 dark:text-blue-300 border-b-2 border-blue-900 dark:border-blue-400 pb-1" href="#">Juez</a>
 </nav>
 </div>
 <div class="flex items-center gap-4">
@@ -104,121 +102,113 @@
 </div>
 </header>
 <div class="flex flex-1">
-<!-- SideNavBar -->
 <aside class="bg-slate-100 dark:bg-slate-950 h-[calc(100vh-64px)] w-64 fixed left-0 top-16 overflow-y-auto flex flex-col gap-4 p-4 border-r border-slate-200 dark:border-slate-800 z-40">
 <div class="mb-6 px-2">
 <div class="flex items-center gap-3 mb-4">
-<img class="w-10 h-10 rounded-full bg-surface-container" data-alt="Portrait of a distinguished male judge in professional judicial robes with a neutral focused expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqN0UQYsA2ORvCE-Iy-UlNX9sRV_0rehor2Hyj18oZ19kerNa6H_bt2GoY5FyeQDCg7l9o65IwBuhjs0BZD3QnFNpzMK1wqnREWlIXbuB2D2k50EHG_Er0l3IGKss9kSqMjbCfccOR0hlDOPX1ZIskwOZnO-u1FbM_RSGApYFYmG0hDqmP__8eewK5bCBjMEUtM8MeAlIUuAuHcR52G8wFHIdkirjws09LVZa-nEUuCf6m8N8x5bYUG97DGdIAre6qxr-guCt-VGU"/>
+<img class="w-10 h-10 rounded-full bg-surface-container" data-alt="Retrato de un juez distinguido con toga judicial profesional y expresión neutral y concentrada" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqN0UQYsA2ORvCE-Iy-UlNX9sRV_0rehor2Hyj18oZ19kerNa6H_bt2GoY5FyeQDCg7l9o65IwBuhjs0BZD3QnFNpzMK1wqnREWlIXbuB2D2k50EHG_Er0l3IGKss9kSqMjbCfccOR0hlDOPX1ZIskwOZnO-u1FbM_RSGApYFYmG0hDqmP__8eewK5bCBjMEUtM8MeAlIUuAuHcR52G8wFHIdkirjws09LVZa-nEUuCf6m8N8x5bYUG97DGdIAre6qxr-guCt-VGU"/>
 <div>
-<p class="text-lg font-bold text-blue-950 dark:text-white leading-tight">Judicial Officer</p>
-<p class="text-xs text-on-surface-variant font-medium">District Court</p>
+<p class="text-lg font-bold text-blue-950 dark:text-white leading-tight">Funcionario Judicial</p>
+<p class="text-xs text-on-surface-variant font-medium">Tribunal de Distrito</p>
 </div>
 </div>
 <button class="w-full bg-gradient-to-br from-primary to-primary-container text-white py-2 rounded-lg font-bold text-sm shadow-md transition-transform active:scale-95">
-                    New Case Filing
+                    Registrar Nuevo Caso
                 </button>
 </div>
 <nav class="flex flex-col gap-1 font-inter text-sm font-medium">
 <a class="flex items-center gap-3 p-3 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 hover:translate-x-1 transition-transform duration-200" href="#">
-<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span> Dashboard
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span> Panel de Control
                 </a>
 <a class="flex items-center gap-3 p-3 bg-white dark:bg-slate-900 text-blue-900 dark:text-blue-300 rounded-lg shadow-sm font-bold" href="#">
-<span class="material-symbols-outlined" data-icon="gavel">gavel</span> Cases
+<span class="material-symbols-outlined" data-icon="gavel">gavel</span> Casos
                 </a>
 <a class="flex items-center gap-3 p-3 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 hover:translate-x-1 transition-transform duration-200" href="#">
-<span class="material-symbols-outlined" data-icon="description">description</span> Documents
+<span class="material-symbols-outlined" data-icon="description">description</span> Documentos
                 </a>
 <a class="flex items-center gap-3 p-3 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 hover:translate-x-1 transition-transform duration-200" href="#">
-<span class="material-symbols-outlined" data-icon="calendar_month">calendar_month</span> Calendar
+<span class="material-symbols-outlined" data-icon="calendar_month">calendar_month</span> Calendario
                 </a>
 <a class="flex items-center gap-3 p-3 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 hover:translate-x-1 transition-transform duration-200" href="#">
-<span class="material-symbols-outlined" data-icon="settings">settings</span> Settings
+<span class="material-symbols-outlined" data-icon="settings">settings</span> Configuración
                 </a>
 </nav>
 <div class="mt-auto border-t border-slate-200 dark:border-slate-800 pt-4 flex flex-col gap-1">
 <a class="flex items-center gap-3 p-3 text-slate-600 dark:text-slate-400 text-xs uppercase tracking-wider" href="#">
-<span class="material-symbols-outlined text-sm" data-icon="help_outline">help_outline</span> Help Center
+<span class="material-symbols-outlined text-sm" data-icon="help_outline">help_outline</span> Centro de Ayuda
                 </a>
 <a class="flex items-center gap-3 p-3 text-slate-600 dark:text-slate-400 text-xs uppercase tracking-wider" href="#">
-<span class="material-symbols-outlined text-sm" data-icon="policy">policy</span> Legal Privacy
+<span class="material-symbols-outlined text-sm" data-icon="policy">policy</span> Privacidad Legal
                 </a>
 </div>
 </aside>
-<!-- Main Content Canvas -->
 <main class="ml-64 flex-1 p-8 bg-surface">
-<!-- Breadcrumbs & Status -->
 <div class="flex justify-between items-center mb-10">
 <div>
-<h1 class="text-3xl font-extrabold tracking-tight text-primary">Case #2024-FJ-882</h1>
-<p class="text-secondary font-medium mt-1">Metropolis Development Corp vs. City Environmental Board</p>
+<h1 class="text-3xl font-extrabold tracking-tight text-primary">Expediente #2024-FJ-882</h1>
+<p class="text-secondary font-medium mt-1">Metropolis Development Corp vs. Junta Ambiental de la Ciudad</p>
 </div>
 <div class="flex items-center gap-4">
 <span class="px-4 py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed text-sm font-bold flex items-center gap-2">
-<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span> DRAFTING RESOLUTION
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span> REDACTANDO RESOLUCIÓN
                     </span>
 <button class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors text-sm font-semibold">
-<span class="material-symbols-outlined text-xl" data-icon="history">history</span> Draft History
+<span class="material-symbols-outlined text-xl" data-icon="history">history</span> Historial de Borradores
                     </button>
 </div>
 </div>
-<!-- Bento Layout for Resolution Workspace -->
 <div class="grid grid-cols-12 gap-8">
-<!-- Left Column: Case Context & Intelligence -->
 <div class="col-span-12 lg:col-span-4 flex flex-col gap-6">
-<!-- Case Summary Card -->
 <section class="bg-surface-container-lowest p-6 rounded-xl shadow-sm border-b-2 border-primary-container">
 <h3 class="text-xs uppercase tracking-widest text-on-surface-variant font-bold mb-4 flex items-center gap-2">
-<span class="material-symbols-outlined text-base" data-icon="fact_check">fact_check</span> Case Intelligence
+<span class="material-symbols-outlined text-base" data-icon="fact_check">fact_check</span> Inteligencia del Caso
                         </h3>
 <div class="space-y-4">
 <div>
-<p class="text-[10px] text-outline uppercase font-bold mb-1">Primary Dispute</p>
-<p class="text-sm leading-relaxed text-on-surface">Failure to comply with Section 14.B of the Urban Expansion Act. Defendant alleges bureaucratic delay.</p>
+<p class="text-[10px] text-outline uppercase font-bold mb-1">Disputa Principal</p>
+<p class="text-sm leading-relaxed text-on-surface">Incumplimiento de la Sección 14.B de la Ley de Expansión Urbana. El demandado alega retraso burocrático.</p>
 </div>
 <div class="grid grid-cols-2 gap-4">
 <div class="bg-surface-container-low p-3 rounded-lg">
-<p class="text-[10px] text-outline uppercase font-bold">Filing Date</p>
-<p class="text-sm font-semibold">Oct 12, 2023</p>
+<p class="text-[10px] text-outline uppercase font-bold">Fecha de Presentación</p>
+<p class="text-sm font-semibold">12 Oct, 2023</p>
 </div>
 <div class="bg-surface-container-low p-3 rounded-lg">
-<p class="text-[10px] text-outline uppercase font-bold">Value</p>
+<p class="text-[10px] text-outline uppercase font-bold">Valor</p>
 <p class="text-sm font-semibold">$2.4M USD</p>
 </div>
 </div>
 <div>
-<p class="text-[10px] text-outline uppercase font-bold mb-2">Key Documents Referenced</p>
+<p class="text-[10px] text-outline uppercase font-bold mb-2">Documentos Clave Referenciados</p>
 <ul class="text-xs space-y-2">
 <li class="flex items-center gap-2 p-2 bg-surface hover:bg-surface-container transition-colors rounded cursor-pointer">
 <span class="material-symbols-outlined text-sm text-primary" data-icon="description">description</span>
-<span>Exhibit A: Environmental Audit</span>
+<span>Anexo A: Auditoría Ambiental</span>
 </li>
 <li class="flex items-center gap-2 p-2 bg-surface hover:bg-surface-container transition-colors rounded cursor-pointer">
 <span class="material-symbols-outlined text-sm text-primary" data-icon="description">description</span>
-<span>Exhibit D: Contractual Addendum</span>
+<span>Anexo D: Adenda Contractual</span>
 </li>
 </ul>
 </div>
 </div>
 </section>
-<!-- AI Assistant Card -->
 <section class="glass-effect p-6 rounded-xl border border-white/40 shadow-xl">
 <h3 class="text-xs uppercase tracking-widest text-primary font-extrabold mb-4 flex items-center gap-2">
-<span class="material-symbols-outlined text-base" data-icon="auto_awesome">auto_awesome</span> Judicial Copilot
+<span class="material-symbols-outlined text-base" data-icon="auto_awesome">auto_awesome</span> Copiloto Judicial
                         </h3>
 <div class="bg-surface-container-lowest/60 p-4 rounded-lg mb-4 text-sm italic text-secondary leading-relaxed border-l-4 border-primary">
-                            "Based on the 3rd Circuit precedents for zoning disputes, you might consider citing *Harrison v. Stone* regarding the 'Good Faith' clause..."
+                            "Basado en los precedentes del 3er Circuito para disputas de zonificación, podría considerar citar *Harrison v. Stone* respecto a la cláusula de 'Buena Fe'..."
                         </div>
 <div class="relative">
-<input class="w-full bg-surface-container-high border-none text-sm p-3 pr-10 rounded-lg focus:ring-2 focus:ring-primary" placeholder="Ask for legal precedents..." type="text"/>
+<input class="w-full bg-surface-container-high border-none text-sm p-3 pr-10 rounded-lg focus:ring-2 focus:ring-primary" placeholder="Pregunte por precedentes legales..." type="text"/>
 <span class="material-symbols-outlined absolute right-3 top-2.5 text-outline" data-icon="send">send</span>
 </div>
 </section>
 </div>
-<!-- Right Column: Final Judgment Editor -->
 <div class="col-span-12 lg:col-span-8 flex flex-col gap-6">
 <section class="bg-surface-container-lowest p-8 rounded-xl shadow-sm min-h-[700px] flex flex-col">
 <div class="flex justify-between items-center mb-6 pb-4 border-b border-outline-variant/20">
-<h2 class="text-xl font-bold text-primary">Judgment Order Drafting</h2>
+<h2 class="text-xl font-bold text-primary">Redacción de la Orden de Sentencia</h2>
 <div class="flex gap-2">
 <button class="p-2 hover:bg-surface-container-low rounded-lg transition-colors"><span class="material-symbols-outlined" data-icon="format_bold">format_bold</span></button>
 <button class="p-2 hover:bg-surface-container-low rounded-lg transition-colors"><span class="material-symbols-outlined" data-icon="format_italic">format_italic</span></button>
@@ -227,32 +217,30 @@
 <button class="p-2 hover:bg-surface-container-low rounded-lg transition-colors"><span class="material-symbols-outlined" data-icon="save">save</span></button>
 </div>
 </div>
-<!-- Editor Area -->
 <div class="flex-1 font-body text-on-surface leading-[1.8] max-w-[70ch] mx-auto w-full">
-<p class="font-bold text-center mb-8 text-lg uppercase tracking-widest">In the District Court of the Sovereign Justice System</p>
-<p class="mb-4"><strong>PARTIES:</strong> Metropolis Development Corp ("Plaintiff") and City Environmental Board ("Defendant").</p>
-<p class="mb-6"><strong>PREAMBLE:</strong> Having reviewed the evidence submitted during the session of November 14th, the Court finds that the environmental citations were issued without sufficient cause of immediate peril, yet the Plaintiff's failure to notify the board of structural changes remains a technical violation.</p>
+<p class="font-bold text-center mb-8 text-lg uppercase tracking-widest">En el Tribunal de Distrito del Sistema de Justicia Soberana</p>
+<p class="mb-4"><strong>PARTES:</strong> Metropolis Development Corp ("Demandante") y Junta Ambiental de la Ciudad ("Demandado").</p>
+<p class="mb-6"><strong>PREÁMBULO:</strong> Habiendo revisado la evidencia presentada durante la sesión del 14 de noviembre, el Tribunal determina que las citaciones ambientales fueron emitidas sin causa suficiente de peligro inmediato, sin embargo, el hecho de que el Demandante no notificara a la junta sobre los cambios estructurales sigue siendo una violación técnica.</p>
 <p class="mb-6 bg-surface-container-low p-4 rounded-lg italic text-secondary">
-                                [Drafting Recommendation: Insert Final Verdict Language here. Specify exact restitution amounts and deadline for compliance.]
+                                [Recomendación de Redacción: Inserte aquí el lenguaje del Veredicto Final. Especifique los montos exactos de restitución y la fecha límite para su cumplimiento.]
                             </p>
-<textarea class="w-full h-96 border-none focus:ring-0 bg-transparent text-lg p-0 resize-none placeholder:text-outline/40" placeholder="Continue writing the final judgment..."></textarea>
+<textarea class="w-full h-96 border-none focus:ring-0 bg-transparent text-lg p-0 resize-none placeholder:text-outline/40" placeholder="Continúe redactando la sentencia final..."></textarea>
 </div>
-<!-- Warning & Close Action -->
 <div class="mt-12 pt-8 border-t border-outline-variant/30">
 <div class="bg-error-container/40 p-6 rounded-xl border border-error/10 flex gap-4 items-start">
 <span class="material-symbols-outlined text-error text-3xl" data-icon="report">report</span>
 <div>
-<h4 class="text-on-error-container font-bold text-sm">CRITICAL: IMMUTABILITY PROTOCOL</h4>
-<p class="text-on-error-container/80 text-xs mt-1 leading-relaxed">Closing this case will generate a cryptographic hash of all documents and the final judgment. Once executed, no further modifications, addendums, or corrections can be made to this digital ledger entry. Ensure all citations are accurate.</p>
+<h4 class="text-on-error-container font-bold text-sm">CRÍTICO: PROTOCOLO DE INMUTABILIDAD</h4>
+<p class="text-on-error-container/80 text-xs mt-1 leading-relaxed">Cerrar este caso generará un hash criptográfico de todos los documentos y la sentencia final. Una vez ejecutado, no se podrán realizar más modificaciones, adendas o correcciones a esta entrada del libro mayor digital. Asegúrese de que todas las citaciones sean precisas.</p>
 </div>
 </div>
 <div class="flex justify-end gap-4 mt-8">
 <button class="px-6 py-3 text-secondary font-bold text-sm hover:bg-surface-container transition-colors rounded-lg">
-                                    Save as Draft
+                                    Guardar como Borrador
                                 </button>
 <button class="px-8 py-3 bg-error text-white font-bold text-sm rounded-lg shadow-lg hover:bg-on-error-container transition-all flex items-center gap-3">
 <span class="material-symbols-outlined" data-icon="lock">lock</span>
-                                    Close Case &amp; Publish Judgment
+                                    Cerrar Caso y Publicar Sentencia
                                 </button>
 </div>
 </div>
@@ -261,18 +249,17 @@
 </div>
 </main>
 </div>
-<!-- Footer -->
 <footer class="bg-slate-50 dark:bg-slate-900 w-full py-8 mt-auto border-t border-slate-200 dark:border-slate-800">
 <div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto">
-<span class="font-manrope font-bold text-slate-400 text-sm">Sovereign Judicial Support System</span>
+<span class="font-manrope font-bold text-slate-400 text-sm">Sistema de Apoyo de Justicia Soberana</span>
 <div class="flex gap-8 my-4 md:my-0">
-<a class="font-inter text-xs uppercase tracking-widest text-slate-500 hover:text-blue-800 transition-colors" href="#">Privacy Policy</a>
-<a class="font-inter text-xs uppercase tracking-widest text-slate-500 hover:text-blue-800 transition-colors" href="#">Terms of Service</a>
-<a class="font-inter text-xs uppercase tracking-widest text-slate-500 hover:text-blue-800 transition-colors" href="#">Accessibility Statement</a>
-<a class="font-inter text-xs uppercase tracking-widest text-slate-500 hover:text-blue-800 transition-colors" href="#">Contact Support</a>
+<a class="font-inter text-xs uppercase tracking-widest text-slate-500 hover:text-blue-800 transition-colors" href="#">Política de Privacidad</a>
+<a class="font-inter text-xs uppercase tracking-widest text-slate-500 hover:text-blue-800 transition-colors" href="#">Términos de Servicio</a>
+<a class="font-inter text-xs uppercase tracking-widest text-slate-500 hover:text-blue-800 transition-colors" href="#">Declaración de Accesibilidad</a>
+<a class="font-inter text-xs uppercase tracking-widest text-slate-500 hover:text-blue-800 transition-colors" href="#">Contactar Soporte</a>
 </div>
 <p class="font-inter text-xs uppercase tracking-widest text-slate-600 dark:text-slate-400">
-                © 2024 Sovereign Judicial Support System. All rights reserved.
+                © 2024 Sistema de Apoyo de Justicia Soberana. Todos los derechos reservados.
             </p>
 </div>
 </footer>

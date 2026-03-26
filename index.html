@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Directorio del Sistema | Justicia Soberana</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-container": "#1a365d",
+              "secondary": "#515f74",
+              "surface-container-high": "#e6e8ea",
+              "primary-fixed": "#d6e3ff",
+              "outline": "#74777f",
+              "outline-variant": "#c4c6cf",
+              "surface-bright": "#f7f9fb",
+              "surface": "#f7f9fb",
+              "surface-container-lowest": "#ffffff",
+              "surface-container": "#eceef0",
+              "error": "#ba1a1a",
+              "primary": "#002045",
+              "on-surface": "#191c1e",
+              "surface-container-low": "#f2f4f6",
+              "surface-container-highest": "#e0e3e5",
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+    <style>
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface min-h-screen flex flex-col">
+<main class="flex-grow flex flex-col md:flex-row min-h-screen">
+    
+    <section class="hidden md:flex md:w-1/2 bg-primary relative overflow-hidden items-center justify-center p-12 lg:p-24">
+        <div class="relative z-10 max-w-lg">
+            <h1 class="font-headline text-5xl lg:text-6xl font-extrabold text-white tracking-tighter leading-none mb-6">
+                Justicia Soberana
+            </h1>
+            <p class="text-blue-200 font-body text-lg lg:text-xl leading-relaxed opacity-90">
+                Directorio de navegación del sistema. Seleccione un módulo y rol para previsualizar la interfaz correspondiente.
+            </p>
+        </div>
+    </section>
+
+    <section class="w-full md:w-1/2 flex flex-col justify-center items-center p-6 md:p-12 lg:p-24 bg-surface-bright overflow-y-auto">
+        <div class="w-full max-w-lg space-y-8">
+            
+            <div class="md:hidden mb-4">
+                <h1 class="font-headline text-3xl font-extrabold text-primary tracking-tighter">Justicia Soberana</h1>
+            </div>
+
+            <div class="bg-surface-container-lowest rounded-xl shadow-lg p-8 border border-outline-variant/10">
+                <div class="flex items-center gap-3 mb-8 border-b-2 border-primary pb-4">
+                    <span class="material-symbols-outlined text-primary text-2xl">account_tree</span>
+                    <h2 class="font-headline text-lg font-bold text-primary uppercase tracking-widest">Mapa del Sitio</h2>
+                </div>
+
+                <div class="grid grid-cols-1 gap-3">
+                    <a href="./1_modulo_autenticacion_acceso/code.html" class="p-4 bg-surface-container-low hover:bg-surface-container-high text-sm rounded-lg transition-colors border border-transparent hover:border-outline-variant/30 flex flex-col gap-1 group">
+                        <div class="flex items-center justify-between">
+                            <span class="font-bold text-primary text-xs uppercase tracking-wider">Usuario: Todos</span>
+                            <span class="font-mono text-secondary text-[10px] font-bold">CARPETA 1</span>
+                        </div>
+                        <span class="font-medium text-on-surface flex items-center gap-2">
+                            <span class="material-symbols-outlined text-secondary text-sm group-hover:text-primary transition-colors">login</span>
+                            Módulo Autenticación y Acceso
+                        </span>
+                    </a>
+
+                    <a href="./2_portal_administrador_gestion_asignacion/code.html" class="p-4 bg-surface-container-low hover:bg-surface-container-high text-sm rounded-lg transition-colors border border-transparent hover:border-outline-variant/30 flex flex-col gap-1 group">
+                        <div class="flex items-center justify-between">
+                            <span class="font-bold text-primary text-xs uppercase tracking-wider">Usuario: Administrador</span>
+                            <span class="font-mono text-secondary text-[10px] font-bold">CARPETA 2</span>
+                        </div>
+                        <span class="font-medium text-on-surface flex items-center gap-2">
+                            <span class="material-symbols-outlined text-secondary text-sm group-hover:text-primary transition-colors">admin_panel_settings</span>
+                            Portal Administrador (Gestión y Asignación)
+                        </span>
+                    </a>
+
+                    <a href="./3_portal_ciudadano_dashboard_generador/code.html" class="p-4 bg-surface-container-low hover:bg-surface-container-high text-sm rounded-lg transition-colors border border-transparent hover:border-outline-variant/30 flex flex-col gap-1 group">
+                        <div class="flex items-center justify-between">
+                            <span class="font-bold text-primary text-xs uppercase tracking-wider">Usuario: Ciudadano</span>
+                            <span class="font-mono text-secondary text-[10px] font-bold">CARPETA 3</span>
+                        </div>
+                        <span class="font-medium text-on-surface flex items-center gap-2">
+                            <span class="material-symbols-outlined text-secondary text-sm group-hover:text-primary transition-colors">person</span>
+                            Portal Ciudadano (Dashboard y Generador)
+                        </span>
+                    </a>
+
+                    <a href="./4_portal_juez_visor_expediente_ia/code.html" class="p-4 bg-surface-container-low hover:bg-surface-container-high text-sm rounded-lg transition-colors border border-transparent hover:border-outline-variant/30 flex flex-col gap-1 group">
+                        <div class="flex items-center justify-between">
+                            <span class="font-bold text-primary text-xs uppercase tracking-wider">Usuario: Juez</span>
+                            <span class="font-mono text-secondary text-[10px] font-bold">CARPETA 4</span>
+                        </div>
+                        <span class="font-medium text-on-surface flex items-center gap-2">
+                            <span class="material-symbols-outlined text-secondary text-sm group-hover:text-primary transition-colors">gavel</span>
+                            Portal Juez (Visor de Expediente con IA)
+                        </span>
+                    </a>
+
+                    <a href="./5_portal_juez_emision_resolucion_cierre_inmutable/code.html" class="p-4 bg-surface-container-low hover:bg-surface-container-high text-sm rounded-lg transition-colors border border-transparent hover:border-outline-variant/30 flex flex-col gap-1 group">
+                        <div class="flex items-center justify-between">
+                            <span class="font-bold text-primary text-xs uppercase tracking-wider">Usuario: Juez</span>
+                            <span class="font-mono text-secondary text-[10px] font-bold">CARPETA 5</span>
+                        </div>
+                        <span class="font-medium text-on-surface flex items-center gap-2">
+                            <span class="material-symbols-outlined text-secondary text-sm group-hover:text-primary transition-colors">description</span>
+                            Portal Juez (Emisión de Resolución)
+                        </span>
+                    </a>
+
+                    <a href="./6_modulo_analitica_judicial/code.html" class="p-4 bg-surface-container-low hover:bg-surface-container-high text-sm rounded-lg transition-colors border border-transparent hover:border-outline-variant/30 flex flex-col gap-1 group">
+                        <div class="flex items-center justify-between">
+                            <span class="font-bold text-primary text-xs uppercase tracking-wider">Usuario: Administrador / Juez</span>
+                            <span class="font-mono text-secondary text-[10px] font-bold">CARPETA 6</span>
+                        </div>
+                        <span class="font-medium text-on-surface flex items-center gap-2">
+                            <span class="material-symbols-outlined text-secondary text-sm group-hover:text-primary transition-colors">insights</span>
+                            Módulo Analítica Judicial
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+</body>
+</html>

@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-
-<html class="light" lang="en"><head>
+<html class="light" lang="es"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Sovereign Justice - Judge's Workspace</title>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<title>Justicia Soberana - Espacio de Trabajo del Juez</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script id="tailwind-config">
         tailwind.config = {
@@ -79,81 +77,73 @@
         }
         body { font-family: 'Inter', sans-serif; }
         h1, h2, h3 { font-family: 'Manrope', sans-serif; }
-        /* Hide scrollbar for Chrome, Safari and Opera */
+        /* Ocultar barra de desplazamiento para Chrome, Safari y Opera */
         .no-scrollbar::-webkit-scrollbar { display: none; }
-        /* Hide scrollbar for IE, Edge and Firefox */
+        /* Ocultar barra de desplazamiento para IE, Edge y Firefox */
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
 </head>
 <body class="bg-surface text-on-surface selection:bg-primary-fixed">
-<!-- SideNavBar (Authority Source: JSON) -->
 <aside class="h-screen w-64 fixed left-0 top-0 overflow-y-auto bg-slate-100 dark:bg-slate-950 flex flex-col gap-4 p-4 border-r border-slate-200 dark:border-slate-800 z-40">
 <div class="mb-6 px-2">
-<h1 class="text-lg font-bold text-blue-950 dark:text-white">Sovereign Justice</h1>
-<p class="text-xs text-slate-500 font-medium">Judicial Officer</p>
+<h1 class="text-lg font-bold text-blue-950 dark:text-white">Justicia Soberana</h1>
+<p class="text-xs text-slate-500 font-medium">Funcionario Judicial</p>
 </div>
 <nav class="flex flex-col gap-1 flex-grow">
-<!-- Dashboard -->
 <a class="flex items-center gap-3 px-3 py-2 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 hover:translate-x-1 transition-transform duration-200 font-inter text-sm font-medium" href="#">
 <span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
-                Dashboard
+                Panel de Control
             </a>
-<!-- Cases - ACTIVE -->
 <a class="flex items-center gap-3 px-3 py-2 bg-white dark:bg-slate-900 text-blue-900 dark:text-blue-300 rounded-lg shadow-sm font-bold font-inter text-sm transition-transform duration-200 scale-95" href="#">
 <span class="material-symbols-outlined" data-icon="gavel" style="font-variation-settings: 'FILL' 1;">gavel</span>
-                Cases
+                Casos
             </a>
-<!-- Documents -->
 <a class="flex items-center gap-3 px-3 py-2 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 hover:translate-x-1 transition-transform duration-200 font-inter text-sm font-medium" href="#">
 <span class="material-symbols-outlined" data-icon="description">description</span>
-                Documents
+                Documentos
             </a>
-<!-- Calendar -->
 <a class="flex items-center gap-3 px-3 py-2 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 hover:translate-x-1 transition-transform duration-200 font-inter text-sm font-medium" href="#">
 <span class="material-symbols-outlined" data-icon="calendar_month">calendar_month</span>
-                Calendar
+                Calendario
             </a>
-<!-- Settings -->
 <a class="flex items-center gap-3 px-3 py-2 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 hover:translate-x-1 transition-transform duration-200 font-inter text-sm font-medium" href="#">
 <span class="material-symbols-outlined" data-icon="settings">settings</span>
-                Settings
+                Configuración
             </a>
 </nav>
 <div class="mt-auto flex flex-col gap-1 pt-4 border-t border-slate-200 dark:border-slate-800">
 <a class="flex items-center gap-3 px-3 py-2 text-slate-500 hover:text-blue-800 font-inter text-xs uppercase tracking-widest" href="#">
 <span class="material-symbols-outlined" data-icon="help_outline">help_outline</span>
-                Help Center
+                Centro de Ayuda
             </a>
 <a class="flex items-center gap-3 px-3 py-2 text-slate-500 hover:text-blue-800 font-inter text-xs uppercase tracking-widest" href="#">
 <span class="material-symbols-outlined" data-icon="policy">policy</span>
-                Legal Privacy
+                Privacidad Legal
             </a>
 <div class="mt-4 px-3 flex items-center gap-3">
-<div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center text-white text-xs font-bold">JO</div>
+<div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center text-white text-xs font-bold">FJ</div>
 <div>
-<p class="text-xs font-bold text-on-surface">District Court</p>
-<p class="text-[10px] text-on-surface-variant">Active Session</p>
+<p class="text-xs font-bold text-on-surface">Tribunal de Distrito</p>
+<p class="text-[10px] text-on-surface-variant">Sesión Activa</p>
 </div>
 </div>
 </div>
 </aside>
-<!-- Main Content Area -->
 <main class="pl-64 flex flex-col min-h-screen">
-<!-- TopAppBar (Authority Source: JSON) -->
 <header class="bg-slate-50 dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 docked full-width top-0 z-30 sticky">
 <div class="flex justify-between items-center w-full px-6 py-3 max-w-full">
 <div class="flex items-center gap-8">
-<span class="font-manrope text-sm font-semibold tracking-tight text-blue-900 dark:text-blue-400">Judge Portal</span>
+<span class="font-manrope text-sm font-semibold tracking-tight text-blue-900 dark:text-blue-400">Portal del Juez</span>
 <nav class="hidden md:flex gap-6">
-<a class="text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-blue-200 font-manrope text-sm font-semibold tracking-tight" href="#">Citizen</a>
-<a class="text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-blue-200 font-manrope text-sm font-semibold tracking-tight" href="#">Admin</a>
-<a class="text-blue-700 dark:text-blue-300 border-b-2 border-blue-900 dark:border-blue-400 pb-1 font-manrope text-sm font-semibold tracking-tight" href="#">Judge</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-blue-200 font-manrope text-sm font-semibold tracking-tight" href="#">Ciudadano</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-blue-200 font-manrope text-sm font-semibold tracking-tight" href="#">Administrador</a>
+<a class="text-blue-700 dark:text-blue-300 border-b-2 border-blue-900 dark:border-blue-400 pb-1 font-manrope text-sm font-semibold tracking-tight" href="#">Juez</a>
 </nav>
 </div>
 <div class="flex items-center gap-4">
 <div class="relative group">
 <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-sm">search</span>
-<input class="bg-surface-container-high border-none rounded-lg pl-9 pr-4 py-1.5 text-xs w-64 focus:ring-1 focus:ring-primary transition-all" placeholder="Global search..." type="text"/>
+<input class="bg-surface-container-high border-none rounded-lg pl-9 pr-4 py-1.5 text-xs w-64 focus:ring-1 focus:ring-primary transition-all" placeholder="Búsqueda global..." type="text"/>
 </div>
 <button class="p-2 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-colors text-slate-500">
 <span class="material-symbols-outlined" data-icon="notifications">notifications</span>
@@ -164,61 +154,56 @@
 </div>
 </div>
 </header>
-<!-- Judicial Workspace Content -->
 <div class="flex flex-1 overflow-hidden h-[calc(100vh-57px)]">
-<!-- Inbox: List of Cases -->
 <section class="w-1/3 border-r border-outline-variant/10 bg-surface-container-low flex flex-col">
 <div class="p-6 border-b border-outline-variant/10">
-<h2 class="text-headline text-xl font-bold tracking-tight text-primary">Pending Inbox</h2>
-<p class="text-body text-xs text-on-surface-variant mt-1">4 cases requiring immediate review</p>
+<h2 class="text-headline text-xl font-bold tracking-tight text-primary">Bandeja de Pendientes</h2>
+<p class="text-body text-xs text-on-surface-variant mt-1">4 casos que requieren revisión inmediata</p>
 </div>
 <div class="flex-grow overflow-y-auto no-scrollbar">
-<!-- Case Item 1 -->
 <div class="p-5 border-b border-outline-variant/10 bg-surface-container-lowest cursor-pointer hover:bg-surface-bright transition-colors relative">
 <div class="absolute left-0 top-0 bottom-0 w-1 bg-primary"></div>
 <div class="flex justify-between items-start mb-2">
-<span class="text-[10px] font-bold tracking-widest uppercase text-on-surface-variant">File #2024-XP-082</span>
-<span class="bg-primary-fixed text-on-primary-fixed px-2 py-0.5 rounded-full text-[10px] font-bold uppercase">New</span>
+<span class="text-[10px] font-bold tracking-widest uppercase text-on-surface-variant">Expediente #2024-XP-082</span>
+<span class="bg-primary-fixed text-on-primary-fixed px-2 py-0.5 rounded-full text-[10px] font-bold uppercase">Nuevo</span>
 </div>
 <h3 class="text-headline text-sm font-bold text-primary mb-1">Hernandez vs. Urban Logistics Corp.</h3>
-<p class="text-body text-xs text-on-surface-variant line-clamp-2">Labor dispute regarding contract termination without severance pay. Demand for $45,000 USD in damages...</p>
+<p class="text-body text-xs text-on-surface-variant line-clamp-2">Disputa laboral sobre terminación de contrato sin indemnización por despido. Demanda por $45,000 USD en daños...</p>
 <div class="flex items-center gap-4 mt-3">
 <div class="flex items-center gap-1 text-[10px] text-on-surface-variant">
-<span class="material-symbols-outlined text-xs">history</span> 2h ago
+<span class="material-symbols-outlined text-xs">history</span> Hace 2h
                             </div>
 <div class="flex items-center gap-1 text-[10px] text-on-surface-variant">
 <span class="material-symbols-outlined text-xs">attach_file</span> 12 Docs
                             </div>
 </div>
 </div>
-<!-- Case Item 2 -->
 <div class="p-5 border-b border-outline-variant/10 cursor-pointer hover:bg-surface-bright transition-colors">
 <div class="flex justify-between items-start mb-2">
-<span class="text-[10px] font-bold tracking-widest uppercase text-on-surface-variant">File #2024-CV-119</span>
-<span class="bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded-full text-[10px] font-bold uppercase">Pending</span>
+<span class="text-[10px] font-bold tracking-widest uppercase text-on-surface-variant">Expediente #2024-CV-119</span>
+<span class="bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded-full text-[10px] font-bold uppercase">Pendiente</span>
 </div>
 <h3 class="text-headline text-sm font-bold text-primary mb-1">Global Tech S.A. vs. Local Dev Co.</h3>
-<p class="text-body text-xs text-on-surface-variant line-clamp-2">Intellectual property infringement claim related to proprietary software modules used in third-party applications...</p>
+<p class="text-body text-xs text-on-surface-variant line-clamp-2">Reclamo por infracción de propiedad intelectual relacionado con módulos de software patentados utilizados en aplicaciones de terceros...</p>
 <div class="flex items-center gap-4 mt-3">
 <div class="flex items-center gap-1 text-[10px] text-on-surface-variant">
-<span class="material-symbols-outlined text-xs">history</span> 5h ago
+<span class="material-symbols-outlined text-xs">history</span> Hace 5h
                             </div>
 <div class="flex items-center gap-1 text-[10px] text-on-surface-variant">
 <span class="material-symbols-outlined text-xs">attach_file</span> 4 Docs
                             </div>
 </div>
 </div>
-<!-- Case Item 3 -->
 <div class="p-5 border-b border-outline-variant/10 cursor-pointer hover:bg-surface-bright transition-colors">
 <div class="flex justify-between items-start mb-2">
-<span class="text-[10px] font-bold tracking-widest uppercase text-on-surface-variant">File #2024-RE-044</span>
-<span class="bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded-full text-[10px] font-bold uppercase">Review</span>
+<span class="text-[10px] font-bold tracking-widest uppercase text-on-surface-variant">Expediente #2024-RE-044</span>
+<span class="bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded-full text-[10px] font-bold uppercase">En Revisión</span>
 </div>
-<h3 class="text-headline text-sm font-bold text-primary mb-1">Smith Property Trust Liquidation</h3>
-<p class="text-body text-xs text-on-surface-variant line-clamp-2">Probate and property distribution among multiple heirs following the dissolution of the estate trust...</p>
+<h3 class="text-headline text-sm font-bold text-primary mb-1">Liquidación del Fideicomiso de Propiedad Smith</h3>
+<p class="text-body text-xs text-on-surface-variant line-clamp-2">Sucesión y distribución de propiedades entre múltiples herederos tras la disolución del fideicomiso patrimonial...</p>
 <div class="flex items-center gap-4 mt-3">
 <div class="flex items-center gap-1 text-[10px] text-on-surface-variant">
-<span class="material-symbols-outlined text-xs">history</span> 1d ago
+<span class="material-symbols-outlined text-xs">history</span> Hace 1d
                             </div>
 <div class="flex items-center gap-1 text-[10px] text-on-surface-variant">
 <span class="material-symbols-outlined text-xs">attach_file</span> 28 Docs
@@ -227,35 +212,31 @@
 </div>
 </div>
 </section>
-<!-- Case Viewer: Detailed View -->
 <section class="flex-grow flex flex-col bg-surface relative overflow-hidden">
-<!-- Semantic Search Bar AI -->
 <div class="p-4 bg-surface-container-lowest z-10 shadow-sm">
 <div class="max-w-4xl mx-auto relative">
 <div class="flex items-center gap-3 bg-surface-container-high rounded-xl px-4 py-3 border-b-2 border-primary">
 <span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
-<input class="bg-transparent border-none text-sm w-full focus:ring-0 font-medium placeholder:text-on-surface-variant" placeholder="Ask AI to find specific legal points or evidence..." type="text" value="Identify evidence of prior termination notice"/>
+<input class="bg-transparent border-none text-sm w-full focus:ring-0 font-medium placeholder:text-on-surface-variant" placeholder="Pida a la IA que busque puntos legales específicos o evidencia..." type="text" value="Identificar evidencia de aviso de terminación previo"/>
 <div class="flex items-center gap-2">
-<span class="text-[10px] font-bold text-primary-container bg-primary-fixed px-2 py-1 rounded">Semantic Search AI</span>
-<button class="bg-primary text-on-primary px-4 py-1.5 rounded-lg text-xs font-bold hover:opacity-90 transition-opacity">Execute</button>
+<span class="text-[10px] font-bold text-primary-container bg-primary-fixed px-2 py-1 rounded">IA de Búsqueda Semántica</span>
+<button class="bg-primary text-on-primary px-4 py-1.5 rounded-lg text-xs font-bold hover:opacity-90 transition-opacity">Ejecutar</button>
 </div>
 </div>
 </div>
 </div>
 <div class="flex-grow overflow-y-auto p-8 space-y-8 no-scrollbar">
-<!-- Header Actions -->
 <div class="flex justify-between items-center border-b border-outline-variant/10 pb-6">
 <div>
 <h2 class="text-headline text-2xl font-extrabold text-primary tracking-tight">Hernandez vs. Urban Logistics Corp.</h2>
-<p class="text-body text-sm text-on-surface-variant mt-1">Filing Date: October 14, 2024 | Court: District 04</p>
+<p class="text-body text-sm text-on-surface-variant mt-1">Fecha de Presentación: 14 de Octubre de 2024 | Tribunal: Distrito 04</p>
 </div>
 <div class="flex gap-3">
-<button class="px-6 py-2.5 bg-gradient-to-br from-primary to-primary-container text-white text-xs font-bold rounded-lg shadow-sm hover:opacity-95 active:scale-95 transition-all">Admitted</button>
+<button class="px-6 py-2.5 bg-gradient-to-br from-primary to-primary-container text-white text-xs font-bold rounded-lg shadow-sm hover:opacity-95 active:scale-95 transition-all">Admitida</button>
 <button class="px-6 py-2.5 bg-secondary-container text-secondary text-xs font-bold rounded-lg hover:bg-slate-200 active:scale-95 transition-all">Prevenida</button>
 <button class="px-6 py-2.5 bg-error-container text-on-error-container text-xs font-bold rounded-lg hover:opacity-90 active:scale-95 transition-all">Desechada</button>
 </div>
 </div>
-<!-- AI Insights Bento Card -->
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 <div class="md:col-span-2 p-6 bg-surface-container-lowest rounded-xl shadow-[0_40px_40px_0_rgba(25,28,30,0.04)] relative overflow-hidden group">
 <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
@@ -265,98 +246,95 @@
 <div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center">
 <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">psychology</span>
 </div>
-<h4 class="text-headline text-sm font-bold text-primary">AI Legal Summary &amp; Findings</h4>
+<h4 class="text-headline text-sm font-bold text-primary">Resumen Legal y Hallazgos de la IA</h4>
 </div>
 <div class="space-y-3">
-<p class="text-body text-xs text-on-surface-variant leading-relaxed">The plaintiff alleges unjustified dismissal on Sept 12. AI analysis detected a discrepancy in Document Exhibit B (Employment Contract), specifically Clause 14 regarding notice periods. </p>
+<p class="text-body text-xs text-on-surface-variant leading-relaxed">El demandante alega despido injustificado el 12 de septiembre. El análisis de IA detectó una discrepancia en el Anexo B del Documento (Contrato de Empleo), específicamente en la Cláusula 14 respecto a los períodos de notificación.</p>
 <div class="bg-surface-container-high p-3 rounded-lg border-l-4 border-primary">
-<p class="text-[11px] font-semibold text-primary mb-1">Key Finding:</p>
-<p class="text-[11px] text-on-surface-variant leading-normal italic">"...termination shall be effective 30 days post-notice, yet digital logs suggest internal access was revoked 2 hours after verbal notice."</p>
+<p class="text-[11px] font-semibold text-primary mb-1">Hallazgo Clave:</p>
+<p class="text-[11px] text-on-surface-variant leading-normal italic">"...la terminación será efectiva 30 días después de la notificación, sin embargo, los registros digitales sugieren que el acceso interno fue revocado 2 horas después de la notificación verbal."</p>
 </div>
 <div class="flex gap-4 pt-2">
-<span class="flex items-center gap-1 text-[10px] font-bold text-on-tertiary-fixed-variant"><span class="material-symbols-outlined text-xs">check_circle</span> 94% Search Confidence</span>
-<span class="flex items-center gap-1 text-[10px] font-bold text-on-tertiary-fixed-variant"><span class="material-symbols-outlined text-xs">description</span> Related to Page 14</span>
+<span class="flex items-center gap-1 text-[10px] font-bold text-on-tertiary-fixed-variant"><span class="material-symbols-outlined text-xs">check_circle</span> 94% de Confianza de Búsqueda</span>
+<span class="flex items-center gap-1 text-[10px] font-bold text-on-tertiary-fixed-variant"><span class="material-symbols-outlined text-xs">description</span> Relacionado con la Página 14</span>
 </div>
 </div>
 </div>
 <div class="bg-tertiary-container p-6 rounded-xl text-white flex flex-col justify-between">
 <div>
-<h4 class="text-xs uppercase tracking-widest font-bold text-on-tertiary-container mb-4">Demanded Relief</h4>
+<h4 class="text-xs uppercase tracking-widest font-bold text-on-tertiary-container mb-4">Compensación Demandada</h4>
 <div class="space-y-4">
 <div>
 <p class="text-2xl font-bold font-manrope">$45,000.00</p>
-<p class="text-[10px] text-on-tertiary-container uppercase">Severance &amp; Damages</p>
+<p class="text-[10px] text-on-tertiary-container uppercase">Indemnización y Daños</p>
 </div>
 <div class="h-[1px] bg-white/10"></div>
 <ul class="space-y-2">
-<li class="flex items-center gap-2 text-[10px]"><span class="material-symbols-outlined text-xs text-primary-fixed-dim">done</span> Full Backpay</li>
-<li class="flex items-center gap-2 text-[10px]"><span class="material-symbols-outlined text-xs text-primary-fixed-dim">done</span> Moral Damages</li>
+<li class="flex items-center gap-2 text-[10px]"><span class="material-symbols-outlined text-xs text-primary-fixed-dim">done</span> Pago Atrasado Completo</li>
+<li class="flex items-center gap-2 text-[10px]"><span class="material-symbols-outlined text-xs text-primary-fixed-dim">done</span> Daños Morales</li>
 </ul>
 </div>
 </div>
-<button class="mt-6 w-full py-2 bg-white/10 hover:bg-white/20 rounded text-[10px] font-bold uppercase tracking-wider transition-colors">View Financial Ledger</button>
+<button class="mt-6 w-full py-2 bg-white/10 hover:bg-white/20 rounded text-[10px] font-bold uppercase tracking-wider transition-colors">Ver Libro Mayor Financiero</button>
 </div>
 </div>
-<!-- Document Canvas (Simulated) -->
 <div class="bg-surface-container-lowest p-12 shadow-sm min-h-[800px] mx-auto max-w-[65ch] text-on-surface">
 <div class="text-center mb-12">
-<h1 class="text-lg font-bold uppercase tracking-widest text-on-surface-variant">Formal Demand for Labor Justice</h1>
-<p class="text-xs text-on-surface-variant mt-2">Case Registry: #2024-XP-082</p>
+<h1 class="text-lg font-bold uppercase tracking-widest text-on-surface-variant">Demanda Formal de Justicia Laboral</h1>
+<p class="text-xs text-on-surface-variant mt-2">Registro del Caso: #2024-XP-082</p>
 </div>
 <div class="space-y-6 text-sm leading-relaxed text-on-surface font-body">
-<p>To the Honorable Judge of the District Labor Court,</p>
-<p><strong class="font-bold">I. PRELIMINARY STATEMENT:</strong> The plaintiff, MARCO HERNANDEZ, hereby initiates this legal action against URBAN LOGISTICS CORP, for the recovery of unpaid labor benefits and damages arising from an illegal and summary dismissal executed on the date of September 12, 2024.</p>
-<p><strong class="font-bold">II. STATEMENT OF FACTS:</strong> For three years, the plaintiff served as a Senior Dispatcher with an impeccable disciplinary record. On the date aforementioned, without prior notice or cause, the defendant's HR department revoked all digital credentials and ordered the plaintiff to vacate the premises immediately.</p>
+<p>Al Honorable Juez del Tribunal Laboral de Distrito,</p>
+<p><strong class="font-bold">I. DECLARACIÓN PRELIMINAR:</strong> El demandante, MARCO HERNANDEZ, por la presente inicia esta acción legal contra URBAN LOGISTICS CORP, para la recuperación de beneficios laborales no pagados y daños derivados de un despido ilegal y sumario ejecutado en la fecha del 12 de septiembre de 2024.</p>
+<p><strong class="font-bold">II. DECLARACIÓN DE LOS HECHOS:</strong> Durante tres años, el demandante se desempeñó como Despachador Senior con un historial disciplinario impecable. En la fecha antes mencionada, sin previo aviso ni causa, el departamento de Recursos Humanos del demandado revocó todas las credenciales digitales y ordenó al demandante desalojar las instalaciones de inmediato.</p>
 <div class="bg-primary-fixed/30 p-4 -mx-4 rounded border-l-4 border-primary relative group">
-<div class="absolute -right-2 top-0 bg-primary text-white text-[8px] px-2 py-0.5 rounded font-bold uppercase">AI Highlight</div>
-<p class="text-primary font-medium italic">"The defendant failed to provide the mandatory 30-day notice period as stipulated in the Collective Bargaining Agreement Section 4.2. Furthermore, the severance package offered ($2,400) covers less than 5% of the statutory requirement."</p>
+<div class="absolute -right-2 top-0 bg-primary text-white text-[8px] px-2 py-0.5 rounded font-bold uppercase">Destacado por IA</div>
+<p class="text-primary font-medium italic">"El demandado no proporcionó el período de notificación obligatorio de 30 días estipulado en la Sección 4.2 del Convenio Colectivo de Trabajo. Además, el paquete de indemnización ofrecido ($2,400) cubre menos del 5% del requisito legal."</p>
 </div>
-<p><strong class="font-bold">III. EVIDENCE EXHIBITS:</strong></p>
+<p><strong class="font-bold">III. ANEXOS DE EVIDENCIA:</strong></p>
 <ul class="list-disc pl-5 space-y-2">
-<li><strong>Exhibit A:</strong> Signed Employment Contract (2021).</li>
-<li><strong>Exhibit B:</strong> Notarized Statement of Witness Elena Vance.</li>
-<li><strong>Exhibit C:</strong> Digital Logs of access revocation (Source: IT Audit).</li>
+<li><strong>Anexo A:</strong> Contrato de Empleo Firmado (2021).</li>
+<li><strong>Anexo B:</strong> Declaración Notariada del Testigo Elena Vance.</li>
+<li><strong>Anexo C:</strong> Registros Digitales de revocación de acceso (Fuente: Auditoría de TI).</li>
 </ul>
-<p>Under penalty of law, I certify that the facts presented herein are true to the best of my knowledge and that this action is not brought for the purpose of harassment or unnecessary delay.</p>
+<p>Bajo pena de perjurio, certifico que los hechos aquí presentados son verdaderos a mi leal saber y entender, y que esta acción no se presenta con el propósito de acoso o retraso innecesario.</p>
 <div class="mt-20 border-t border-on-surface-variant/20 pt-4 flex justify-between">
 <div class="text-center">
 <div class="h-1 w-32 bg-on-surface-variant/20 mb-2"></div>
-<p class="text-[10px] font-bold uppercase">Plaintiff Signature</p>
+<p class="text-[10px] font-bold uppercase">Firma del Demandante</p>
 </div>
 <div class="text-center">
 <div class="h-1 w-32 bg-on-surface-variant/20 mb-2"></div>
-<p class="text-[10px] font-bold uppercase">Legal Counsel</p>
+<p class="text-[10px] font-bold uppercase">Asesor Legal</p>
 </div>
 </div>
 </div>
 </div>
 </div>
-<!-- Footer (Authority Source: JSON) -->
 <footer class="bg-slate-50 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 w-full py-8 mt-auto z-10">
 <div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto">
 <div class="font-manrope font-bold text-slate-400 mb-4 md:mb-0">
-                            Sovereign Judicial Support System
+                            Sistema de Apoyo de Justicia Soberana
                         </div>
 <div class="flex flex-wrap justify-center gap-6">
-<a class="font-inter text-xs uppercase tracking-widest text-slate-500 hover:text-blue-800 transition-colors" href="#">Privacy Policy</a>
-<a class="font-inter text-xs uppercase tracking-widest text-slate-500 hover:text-blue-800 transition-colors" href="#">Terms of Service</a>
-<a class="font-inter text-xs uppercase tracking-widest text-slate-500 hover:text-blue-800 transition-colors" href="#">Accessibility</a>
-<a class="font-inter text-xs uppercase tracking-widest text-slate-500 hover:text-blue-800 transition-colors" href="#">Contact Support</a>
+<a class="font-inter text-xs uppercase tracking-widest text-slate-500 hover:text-blue-800 transition-colors" href="#">Política de Privacidad</a>
+<a class="font-inter text-xs uppercase tracking-widest text-slate-500 hover:text-blue-800 transition-colors" href="#">Términos de Servicio</a>
+<a class="font-inter text-xs uppercase tracking-widest text-slate-500 hover:text-blue-800 transition-colors" href="#">Accesibilidad</a>
+<a class="font-inter text-xs uppercase tracking-widest text-slate-500 hover:text-blue-800 transition-colors" href="#">Contactar Soporte</a>
 </div>
 <div class="mt-4 md:mt-0 font-inter text-xs uppercase tracking-widest text-slate-600 dark:text-slate-400">
-                            © 2024 Sovereign Judicial Support System. All rights reserved.
+                            © 2024 Sistema de Apoyo de Justicia Soberana. Todos los derechos reservados.
                         </div>
 </div>
 </footer>
 </section>
 </div>
 </main>
-<!-- Floating AI Assistant (Optional Detail from DS) -->
 <div class="fixed bottom-6 right-6 z-50">
 <button class="w-14 h-14 bg-primary text-on-primary rounded-full shadow-lg flex items-center justify-center hover:scale-105 transition-transform group">
 <span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
 <div class="absolute right-full mr-4 bottom-2 bg-surface-container-low/80 backdrop-blur-md px-4 py-2 rounded-xl text-xs font-medium text-primary shadow-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity border border-outline-variant/10">
-                Ask Legal AI Assistant
+                Consultar al Asistente Legal de IA
             </div>
 </button>
 </div>
