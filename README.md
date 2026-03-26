@@ -1,2 +1,3 @@
 # Proyecto-Legal
-Primera Parte Proyecto Legal
+
+Proyecto Legal: Diseño de Interfaces
